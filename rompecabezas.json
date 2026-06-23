@@ -1,0 +1,50 @@
+[
+  {
+    "id_producto": 1,
+    "nombre": "Constelaciones",
+    "descripcion": "Rompecabezas de 1000 piezas con un diseño del universo y sus constelaciones.",
+    "precio": 45000,
+    "stock": 5,
+    "imagen": "./assets/img/rompecabezas/constelaciones.png"
+  },
+  {
+    "id_producto": 2,
+    "nombre": "Frida Kahlo",
+    "descripcion": "Rompecabezas de 1000 piezas con el icónico retrato de Frida Kahlo.",
+    "precio": 48000,
+    "stock": 8,
+    "imagen": "./assets/img/rompecabezas/frida.png"
+  },
+  {
+    "id_producto": 4,
+    "nombre": "Grecia",
+    "descripcion": "Rompecabezas de 1000 piezas con una vista panorámica de Grecia.",
+    "precio": 52000,
+    "stock": 6,
+    "imagen": "./assets/img/rompecabezas/grecia.png"
+  },
+  {
+    "id_producto": 5,
+    "nombre": "El Hechizo",
+    "descripcion": "Rompecabezas de 500 piezas con una ilustración mágica y colorida.",
+    "precio": 35000,
+    "stock": 7,
+    "imagen": "./assets/img/rompecabezas/hechizo.png"
+  },
+  {
+    "id_producto": 6,
+    "nombre": "Londres",
+    "descripcion": "Rompecabezas de 1000 piezas con el icónico Tower Bridge de Londres.",
+    "precio": 50000,
+    "stock": 4,
+    "imagen": "./assets/img/rompecabezas/londres.png"
+  },
+  {
+    "id_producto": 8,
+    "nombre": "Noche Estrellada",
+    "descripcion": "Rompecabezas de 1000 piezas inspirado en la obra de Van Gogh.",
+    "precio": 58000,
+    "stock": 11,
+    "imagen": "./assets/img/rompecabezas/starry.png"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id_producto": 1,
+    "nombre": "Azul",
+    "descripcion": "Juego de estrategia y colocación de azulejos.",
+    "precio": 85500,
+    "stock": 5,
+    "imagen": "./assets/img/juegos/azul1.png"
+  },
+  {
+    "id_producto": 2,
+    "nombre": "Carcassonne",
+    "descripcion": "Construí ciudades, caminos y monasterios.",
+    "precio": 65800,
+    "stock": 8,
+    "imagen": "./assets/img/juegos/carcassone1.png"
+  },
+  {
+    "id_producto": 3,
+    "nombre": "Catan",
+    "descripcion": "Colonizá la isla y comerciá recursos.",
+    "precio": 95300,
+    "stock": 10,
+    "imagen": "./assets/img/juegos/catan1.png"
+  },
+  {
+    "id_producto": 4,
+    "nombre": "Catan Energías",
+    "descripcion": "Versión sustentable del clásico Catan.",
+    "precio": 98200,
+    "stock": 6,
+    "imagen": "./assets/img/juegos/catanenergia1.png"
+  },
+  {
+    "id_producto": 5,
+    "nombre": "The Mind",
+    "descripcion": "Juego cooperativo de intuición y sincronización.",
+    "precio": 28000,
+    "stock": 10,
+    "imagen": "./assets/img/juegos/mind1.png"
+  },
+  {
+    "id_producto": 6,
+    "nombre": "Sushi Go!",
+    "descripcion": "Armá el mejor menú de sushi para ganar.",
+    "precio": 35000,
+    "stock": 20,
+    "imagen": "./assets/img/juegos/sushi1.png"
+  },
+  {
+    "id_producto": 7,
+    "nombre": "Tetris",
+    "descripcion": "Versión de mesa inspirada en el clásico videojuego.",
+    "precio": 42200,
+    "stock": 7,
+    "imagen": "./assets/img/juegos/tetris1.png"
+  },
+  {
+    "id_producto": 8,
+    "nombre": "Virus!",
+    "descripcion": "Completa tu cuerpo antes que tus rivales.",
+    "precio": 27300,
+    "stock": 12,
+    "imagen": "./assets/img/juegos/virusjuego1.png"
+  }
+]

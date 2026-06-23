@@ -1,0 +1,35 @@
+
+.navbar-carrito {
+    background: linear-gradient(90deg, #1a0533, #3b0f8c);
+    padding: 1.2rem 0;
+    border-bottom: 2px solid rgba(139, 92, 246, 0.4);
+    box-shadow: 0 4px 15px rgba(59, 15, 140, 0.4);
+}
+.navbar-carrito .carrito {
+    display: flex;
+    align-items: center;
+}
+.navbar-carrito h1 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.navbar-carrito h1 .bi {
+    color: #f0c040;
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+#footer {
+    background-color: rgba(10, 10, 20, 0.95);
+    border-top: 1px solid rgba(139, 92, 246, 0.3);
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+}
+
+
