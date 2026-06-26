@@ -2,7 +2,6 @@
 let titulo = document.getElementsByTagName('title')[0];
 let h1Title = document.getElementById('titulo').innerText;
 
-
 const cabecera = document.getElementById('header');
 const navegacion = document.createElement('div');
 const nav = document.createElement('nav');
@@ -28,7 +27,6 @@ img.alt = "MagicKing logo";
 
 liImagen.appendChild(origen);
 ul.appendChild(liImagen);
-
 
 for (const link of links) {
     const li = document.createElement('li');

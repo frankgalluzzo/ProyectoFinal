@@ -1,14 +1,18 @@
-
+/* ══════════════════════════════════════════
+   NAVBAR CARRITO
+══════════════════════════════════════════ */
 .navbar-carrito {
     background: linear-gradient(90deg, #1a0533, #3b0f8c);
     padding: 1.2rem 0;
     border-bottom: 2px solid rgba(139, 92, 246, 0.4);
     box-shadow: 0 4px 15px rgba(59, 15, 140, 0.4);
 }
+
 .navbar-carrito .carrito {
     display: flex;
     align-items: center;
 }
+
 .navbar-carrito h1 {
     color: white;
     font-size: 1.8rem;
@@ -16,20 +20,96 @@
     letter-spacing: 1px;
     margin: 0;
 }
+
 .navbar-carrito h1 .bi {
-    color: #f0c040;
+    color: #f0c040;           
     margin-right: 0.5rem;
     font-size: 2rem;
     vertical-align: middle;
 }
+
 #footer {
-    background-color: rgba(10, 10, 20, 0.95);
-    border-top: 1px solid rgba(139, 92, 246, 0.3);
-    text-align: center;
-    padding: 2rem 1rem;
     color: #aaa;
-    font-size: 0.9rem;
-    margin-top: 4rem;
+    font-size: 1rem;
+    text-align: center;       
+    background: linear-gradient(
+        98deg,
+        rgba(22, 22, 42, 1) 0%,
+        rgb(44, 25, 89) 100%
+    );
+   
 }
 
+/* ── Links del footer ── */
+.footer-links a {
+    /* display: column ← ❌ no existe */
+    color: #aaa;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+/* ── Íconos de redes sociales ── */
+.social-link {
+    display: inline-flex;
+    align-items: center;       /* ✅ solo una vez */
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.08); /* ✅ semitransparente */
+    color: #aaa;
+    font-size: 1.2rem;
+    margin: 0 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--magic-purple, #8b5cf6);
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4); /* ✨ extra */
+}
+
+/* ── Íconos SVG/img dentro del link ── */
+.social-icon {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    /* color: #aaa ← no afecta a <img>, solo a íconos de fuente */
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* ── Body ocupa toda la pantalla ── */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ← ocupa al menos toda la pantalla */
+}
+
+/* ── El contenido principal crece para empujar el footer ── */
+main {
+    flex: 1; /* ← esto empuja el footer hacia abajo */
+}
+
+#footer {
+    color: #aaa;
+    font-size: 1rem;
+    text-align: center;
+    background: linear-gradient(
+        98deg,
+        rgba(22, 22, 42, 1) 0%,
+        rgb(44, 25, 89) 100%
+    );
+}
 
