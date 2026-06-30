@@ -81,49 +81,9 @@ El **Proyecto Final** debe integrar todos los temas vistos durante la cursada, d
 
 ---
 
-## Estructura sugerida del repositorio
-
-```bash
-.
-|-- assets/
-|-- index.html
-`-- README.md
-```
-
----
-
-## Metodologia de trabajo
-
-Durante la cursada se busca avanzar de menor a mayor complejidad:
-
-- primero, incorporando la logica base del lenguaje
-- despues, aplicando manipulacion de datos y del DOM
-- luego, sumando eventos, almacenamiento y asincronia
-- finalmente, integrando todo en un proyecto funcional
-
----
-
-## Recomendaciones para la cursada
-
-- escribir codigo claro y con nombres descriptivos
-- practicar en cada clase, no solo antes de la entrega
-- dividir los problemas grandes en funciones pequenas
-- probar cada cambio antes de seguir avanzando
-- comentar solo cuando aporte contexto real
-- priorizar legibilidad antes que complejidad innecesaria
-
----
-
 ## Profesor
 
 Alejandro Daniel Di Stefano
-
----
-
-## Estado de la cursada
-
-> En construccion. Este repositorio ira creciendo clase a clase con ejercicios, desafios y entregas de la comision
-> **92395**.
 
 ---
 
@@ -133,3 +93,39 @@ Aprender JavaScript no es solo memorizar sintaxis: es desarrollar criterio para 
 codigo y construir experiencias interactivas reales en la web.
 
 **Comision 92395**: a programar, practicar y llevar el proyecto final a un nivel profesional.
+
+
+# MagicKing 🎲
+
+Proyecto final del curso de JavaScript en CoderHouse.
+
+---
+
+## ¿De qué se trata?
+
+Una tienda online de juegos de mesa y rompecabezas.
+El usuario puede ver los productos, agregarlos al carrito y simular una compra.
+
+---
+
+## Tecnologias usadas
+
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap
+- JSON
+- LocalStorage
+- Fetch API
+
+---
+
+## Funcionalidades
+
+- Ver productos cargados desde un archivo JSON
+- Agregar y quitar productos del carrito
+- Persistencia del carrito con LocalStorage
+- Notificaciones con Toastify
+- Confirmaciones con SweetAlert2
+
+---

@@ -1,13 +1,7 @@
-// ══════════════════════════════════════════════════════
-//   CLAVE ÚNICA para localStorage
-// ══════════════════════════════════════════════════════
-const STORAGE_KEY = "carrito"; // ← un solo lugar para cambiarla
+const carritoNuevo = "carrito";
 
-// ══════════════════════════════════════════════════════
-//   AGREGAR AL CARRITO
-// ══════════════════════════════════════════════════════
 function agregarAlCarrito(producto) {
-    const memoria = localStorage.getItem(STORAGE_KEY);
+    const memoria = localStorage.getItem(carritoNuevo);
     let carrito = memoria ? JSON.parse(memoria) : [];
 
     const idProducto = Number(producto.id_producto);
@@ -17,7 +11,7 @@ function agregarAlCarrito(producto) {
         id_producto: idProducto,
         precio:      Number(producto.precio),
         stock:       Number(producto.stock),
-        cantidad:    Number(producto.cantidad) || 1, // ✅ nunca undefined
+        cantidad:    Number(producto.cantidad) || 1,
     };
 
     const productoExistente = carrito.find(
@@ -44,15 +38,13 @@ function agregarAlCarrito(producto) {
         mostrarToast(`${producto.nombre} agregado al carrito`);
     }
 
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(carrito)); // ✅ clave unificada
-    actualizarContadorCarrito();                                 // ✅ sin parámetro
+    localStorage.setItem(carritoNuevo, JSON.stringify(carrito)); 
+    actualizarContadorCarrito();                                 
 }
 
-// ══════════════════════════════════════════════════════
-//   ACTUALIZAR CONTADOR — lee siempre desde localStorage
-// ══════════════════════════════════════════════════════
+
 function actualizarContadorCarrito() {
-    const carrito  = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+    const carrito  = JSON.parse(localStorage.getItem(carritoNuevo)) || [];
     const total    = carrito.reduce((acc, item) => acc + Number(item.cantidad || 0), 0);
     const contador = document.getElementById("contador-carrito");
 
@@ -61,24 +53,17 @@ function actualizarContadorCarrito() {
     }
 }
 
-// ══════════════════════════════════════════════════════
-//   TOAST
-// ══════════════════════════════════════════════════════
 function mostrarToast(mensaje) {
     Toastify({
         text:     mensaje,
         duration: 2000,
         gravity:  "bottom",
         position: "right",
-        style: {
-            background: "linear-gradient(to right, #6a11cb, #2575fc)",
-        },
     }).showToast();
 }
 
-
 function cargarCarritoDesdeLocalStorage() {
-    const memoria = localStorage.getItem(STORAGE_KEY); // ✅ clave unificada
+    const memoria = localStorage.getItem(carritoNuevo);
     const carrito = memoria ? JSON.parse(memoria) : [];
 
     return carrito.map((item) => ({
@@ -192,8 +177,8 @@ function mostrarCarrito() {
             mostrarToast(`${item.nombre} eliminado del carrito`);
         }
 
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(carritoActual)); // ✅
-        actualizarContadorCarrito();                                       // ✅
+        localStorage.setItem(carritoNuevo, JSON.stringify(carritoActual)); 
+        actualizarContadorCarrito();                                      
         mostrarCarrito();
     };
 }
@@ -201,7 +186,7 @@ function mostrarCarrito() {
 if (document.getElementById("carrito-items")) {
     mostrarCarrito();
 
-    // ── Vaciar carrito ──
+
     const btnVaciar = document.getElementById("btn-vaciar");
     if (btnVaciar) {
         btnVaciar.addEventListener("click", () => {
@@ -213,7 +198,7 @@ if (document.getElementById("carrito-items")) {
                 cancelButtonText:   "Cancelar",
             }).then((result) => {
                 if (result.isConfirmed) {
-                    localStorage.removeItem(STORAGE_KEY); // ✅
+                    localStorage.removeItem(carritoNuevo);
                     actualizarContadorCarrito();
                     mostrarCarrito();
                 }
@@ -221,7 +206,6 @@ if (document.getElementById("carrito-items")) {
         });
     }
 
-    // ── Comprar ──
     const btnComprar = document.getElementById("btn-comprar");
     if (btnComprar) {
         btnComprar.addEventListener("click", () => {
@@ -253,7 +237,7 @@ if (document.getElementById("carrito-items")) {
                 allowOutsideClick:  false,
             }).then((result) => {
                 if (result.isConfirmed) {
-                    localStorage.removeItem(STORAGE_KEY); // ✅
+                    localStorage.removeItem(carritoNuevo);
                     actualizarContadorCarrito();
                     mostrarCarrito();
                 }
@@ -261,10 +245,5 @@ if (document.getElementById("carrito-items")) {
         });
     }
 }
-
-// ══════════════════════════════════════════════════════
-//   INICIALIZAR CONTADOR AL CARGAR CUALQUIER PÁGINA
-// ══════════════════════════════════════════════════════
-actualizarContadorCarrito(); // ✅ actualiza el badge del navbar siempre
-
+actualizarContadorCarrito();
 peticion();

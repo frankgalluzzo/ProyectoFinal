@@ -3,6 +3,17 @@
     padding: 0;
     font-family: 'Roboto';
 }
+:root{
+    
+    --bg-primary: #F8F7FF;
+    --bg-secondary: #16162A;
+    --magic-purple: #8B5CF6;
+    --magic-cyan: #06B6D4;
+    --magic-gold: #D4AF37;
+    --text-primary: #1F2937;
+    --text-light: #F5F3FF;
+    --text-secondary: #6B7280;
+}
 /* Navbar --------------------------- */
 .navbar nav {
     height: 4rem;
@@ -47,10 +58,10 @@
     width: auto;
     transition: transform 0.3s ease;
 }
-
 .navbar nav ul li img:hover {
     transform: scale(1.5);
 }
+
 a {
     text-decoration: none;
 }
@@ -64,57 +75,12 @@ h1 {
     color: #333;
     font-family: airstrike;
 }
-
 body {
-    padding-top: 80px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; 
 }
-
-
-/* Carrito --------- */
-.navbar ul {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.carrito-nav {
-  margin-left: auto; 
-}
-
-.carrito-nav a {
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-/* Carrito - página activa en navbar */
-.active-nav {
-    color: var(--magic-gold) !important;
-    border-bottom: 2px solid var(--magic-gold);
-    padding-bottom: 2px;
-}
-
-/* Título de la página carrito */
-.titulo {
-    text-align: center;
-    margin-top: 6rem; /* espacio por el navbar fixed */
-    margin-bottom: 1rem;
-    color: var(--magic-purple);
-    font-family: airstrike;
-}
-
-/* Badge contador del carrito */
-#cart-count {
-    font-size: 0.7rem;
-    padding: 3px 6px;
-    border-radius: 50%;
-    vertical-align: top;
-}
-
-
 /* Carrusel---------------------*/
 .hero-carousel {
     width: 100%;
@@ -129,16 +95,13 @@ body {
 #carouselMagicKing .carousel-item img {
     width: 100%;
     height: 85vh; 
-    
 }
-
 
 .mainContact {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .mainContact form {
     display: flex;
     flex-direction: column;
@@ -147,26 +110,22 @@ body {
     gap: 1rem;
     padding: 2rem;
 }
-
 .mainContact form>* {
     min-width: calc(100% - 1rem);
     height: 2rem;
     font-size: 1.1rem;
 }
-
 .mainContact>div>h4 {
     padding: 2rem;
     font-size: 2rem;
     color: blue;
 }
-
 .line {
     width: 100%;
     height: 4px;
     border-radius: 50%;
     background-color: #c2c2c2;
 }
-
 #cart,
 #product-list {
     display: flex;
@@ -180,18 +139,15 @@ body {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-
 #product-list>div {
     display: flex;
     justify-content: space-between;
     width: calc(100% - 2rem);
 }
-
 .cart_title {
     background-color: #c2c2c2;
     height: 1.5rem;
 }
-
 .button_grey {
     background-color: #c2c2c2;
     height: 2rem;
@@ -202,19 +158,15 @@ body {
     cursor: pointer;
     margin: .25rem;
 }
-
 .button_grey:hover {
     background-color: #fff;
     border: 1px solid #c2c2c2;
 }
-
-
 .botonera {
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
 }
-
 .botonera button {
     background-color: chocolate;
     width: 6rem;
@@ -223,7 +175,6 @@ body {
     color: white;
     font-size: 1rem;
 }
-
 .slide {
     list-style: none;
     padding: 0;
@@ -236,35 +187,29 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
 .slide li {
     display: none;
     flex: 0 0 100%;
     justify-content: center;
     align-items: center;
 }
-
 .slide li img {
     width: 840px;
     height: 480px;
     border-radius: 1rem;
 }
-
 .slide li.active {
     display: block;
 }
-
 .control {
     cursor: pointer;
     padding: 10px;
 }
-
 #error_carrito {
     padding-bottom: 2rem;
     display: flex;
     justify-content: center;
 }
-
 #error_carrito p {
     width: 600px;
     background-color: #c2c2c2;
@@ -273,21 +218,13 @@ body {
     text-align: center;
     border-radius: .5rem;
 }
-
-.titulo {
-    text-align: center;
-    margin-top: 2rem;
-}
-
 .div-busqueda {
     padding: 2rem;
 }
-
 .busqueda {
     min-width: 240px;
     margin: 1rem;
 }
-
 /* ---------- CARDS ---------- */
 .tarjetas {
     display: flex;
@@ -299,33 +236,28 @@ body {
     max-width: calc(100vw - 8rem);
     margin: 0 auto;
 }
-
 .card {
     align-items: center;
-    border-radius: 20px rgba(139,92,246,.25);
-    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    border-radius: 12px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,.1); 
     transition: .3s;
     text-align: center;
+    overflow: hidden;
 }
-
 .card:hover{
     transform: translateY(-8px) scale(1.03);
     box-shadow:
         0 8px 20px rgba(139,92,246,.25),
         0 0 15px rgba(6,182,212,.15);
 }
-
 .card img{
     width: 100%;
     height: 250px;
     object-fit: contain;
 }
-
-
 #toggle-dark-mode {
     margin: 2rem 3rem;
 }
-
 .contacto-form,
 .logo-principal {
     height: 60vh;
@@ -334,38 +266,6 @@ body {
     align-items: center;
     flex-direction: column;
 }
-
-
-:root{
-    
-    --bg-primary: #F8F7FF;
-    --bg-secondary: #16162A;
-    --magic-purple: #8B5CF6;
-    --magic-cyan: #06B6D4;
-    --magic-gold: #D4AF37;
-    --text-primary: #1F2937;
-    --text-light: #F5F3FF;
-    --text-secondary: #6B7280;
-}
-
-body{
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-.carrito{
-
-  background: linear-gradient(98deg, rgba(22, 22, 42, 1) 0%, rgba(77, 44, 153, 1) 100%);
-  border-bottom: 2px solid var(--magic-purple);
-
-}
-
-
-
-/* ---------- BOTONES ---------- */
-
 button{
     background: linear-gradient(
         135deg,
@@ -380,15 +280,46 @@ button{
     cursor: pointer;
     transition: .3s;
 }
-
 button:hover{
     transform: scale(1.05);
     filter: brightness(1.1);
 }
-
-
-
-/* Carrito */
+/* Carrito ------------------------------------*/
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.carrito-nav {
+    margin-left: auto; 
+}
+.carrito-nav a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.active-nav {
+    color: var(--magic-gold) !important;
+    border-bottom: 2px solid var(--magic-gold);
+    padding-bottom: 2px;
+}
+.titulo {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    color: var(--magic-purple);
+    font-family: airstrike;
+}
+#cart-count {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+    border-radius: 50%;
+    vertical-align: top;
+}
 .carrito-nav .nav-link {
     background: rgba(139, 92, 246, 0.15);
     border: 1px solid rgba(139, 92, 246, 0.4);
@@ -411,6 +342,7 @@ button:hover{
     font-weight: 800;
     margin-left: 4px;
 }
+/* Footer -------------------------  */
 #footer {
     text-align: center;
     color: #aaa;
@@ -453,12 +385,7 @@ button:hover{
     object-fit: contain;
     color:#aaa;
     transition: filter 0.3s ease, transform 0.3s ease;
-    
 }
-
-
-
-
 .card-nav {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -472,20 +399,32 @@ button:hover{
 .card-img-wrapper {
     position: relative;
     overflow: hidden;
+    width: 100%;
     height: 200px;
+    border-radius: 0;
 }
-
 .card-img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.4s ease;
 }
-
+.card-img-wrapper .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 0;
+    transition: transform 0.4s ease;
+}
 .card-nav:hover .card-img-wrapper img {
     transform: scale(1.08);
 }
-
+.card:hover .card-img-top {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
 .card-overlay {
     position: absolute;
     inset: 0;
@@ -496,11 +435,15 @@ button:hover{
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-
+.card-overlay {
+    background: rgba(0, 0, 0, 0.35);
+}
 .card-nav:hover .card-overlay {
+    opacity: 1; 
+}
+.card:hover .card-overlay {
     opacity: 1;
 }
-
 .btn-purple {
     background: linear-gradient(135deg, #8b5cf6, #6d28d9);
     color: white;
@@ -509,18 +452,18 @@ button:hover{
     padding: 6px 18px;
     transition: all 0.3s ease;
 }
-
 .btn-purple:hover {
     background: linear-gradient(135deg, #6d28d9, #4c1d95);
     color: white;
     transform: scale(1.05);
 }
-
 .seccion-cards {
     background-color: #f3e8ff;  
     padding: 1rem 0;
 }
-
+.card-img-top {
+    transition: transform 0.4s ease;
+}
 hr {
     border: none;
     height: 2px;
@@ -528,70 +471,13 @@ hr {
     opacity: 1;
     margin: 0;       
 }
-
-/* Letras --------------- */
+/* Letras ------------------------- */
+@font-face {
+    font-family: airstrike;
+    src: url(/assets/letras/airstrike/airstrike.otf);
+}
 
 @font-face {
-font-family: airstrike;
-src: url(../letras/airstrike/airstrike.otf);
+    font-family: aldo;
+    src: url(/assets/letras/aldo/aldo.ttf);
 }
-@font-face {
-font-family: aldo;
-src: url(../letras/aldo/aldo.ttf);
-}
-
-/* ── Wrapper de imagen ── */
-.card-img-wrapper {
-    position: relative;
-    width: 100%;
-    height: 200px;        /* 👈 ajustá la altura a tu gusto */
-    overflow: hidden;
-    border-radius: 0;     /* sin redondeo para que llegue al borde */
-}
-
-/* ── Imagen cubre todo el wrapper ── */
-.card-img-wrapper .card-img-top {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;    /* 👈 clave para que cubra sin deformarse */
-    object-position: center;
-    display: block;
-    border-radius: 0;
-}
-
-/* ── Overlay con ícono encima ── */
-.card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.35);   /* oscurece levemente */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-
-.card:hover .card-overlay {
-    opacity: 1;
-}
-
-/* ── Efecto zoom suave en la imagen al hover ── */
-.card:hover .card-img-top {
-    transform: scale(1.05);
-    transition: transform 0.4s ease;
-}
-
-.card-img-top {
-    transition: transform 0.4s ease;
-}
-
-/* ── Card sin overflow para respetar border-radius ── */
-.card {
-    overflow: hidden;
-    border-radius: 12px;
-}
-

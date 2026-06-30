@@ -16,6 +16,14 @@
     "imagen": "./assets/img/rompecabezas/frida.png"
   },
   {
+    "id_producto": 3,
+    "nombre": "Futbol",
+    "descripcion": "Rompecabezas de 250 piezas de una pelota de fútbol.",
+    "precio": 40500,
+    "stock": 3,
+    "imagen": "./assets/img/rompecabezas/futbol.png"
+  },
+  {
     "id_producto": 4,
     "nombre": "Grecia",
     "descripcion": "Rompecabezas de 1000 piezas con una vista panorámica de Grecia.",
@@ -38,6 +46,14 @@
     "precio": 50000,
     "stock": 4,
     "imagen": "./assets/img/rompecabezas/londres.png"
+  },
+  {
+    "id_producto": 7,
+    "nombre": "Sagrada Familia",
+    "descripcion": "Rompecabezas de 1000 piezas inspirado en la Sagrada Familia.",
+    "precio": 63500,
+    "stock": 3,
+    "imagen": "./assets/img/rompecabezas/sagrada.png"
   },
   {
     "id_producto": 8,

@@ -1,4 +1,3 @@
-
 let titulo = document.getElementsByTagName('title')[0];
 let h1Title = document.getElementById('titulo').innerText;
 

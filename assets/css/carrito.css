@@ -1,18 +1,13 @@
-/* ══════════════════════════════════════════
-   NAVBAR CARRITO
-══════════════════════════════════════════ */
 .navbar-carrito {
     background: linear-gradient(90deg, #1a0533, #3b0f8c);
     padding: 1.2rem 0;
     border-bottom: 2px solid rgba(139, 92, 246, 0.4);
     box-shadow: 0 4px 15px rgba(59, 15, 140, 0.4);
 }
-
 .navbar-carrito .carrito {
     display: flex;
     align-items: center;
 }
-
 .navbar-carrito h1 {
     color: white;
     font-size: 1.8rem;
@@ -20,14 +15,12 @@
     letter-spacing: 1px;
     margin: 0;
 }
-
 .navbar-carrito h1 .bi {
     color: #f0c040;           
     margin-right: 0.5rem;
     font-size: 2rem;
     vertical-align: middle;
 }
-
 #footer {
     color: #aaa;
     font-size: 1rem;
@@ -37,71 +30,50 @@
         rgba(22, 22, 42, 1) 0%,
         rgb(44, 25, 89) 100%
     );
-   
 }
-
-/* ── Links del footer ── */
 .footer-links a {
-    /* display: column ← ❌ no existe */
     color: #aaa;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
-
 .footer-links a:hover {
     color: #ffffff;
 }
-
-/* ── Íconos de redes sociales ── */
 .social-link {
     display: inline-flex;
-    align-items: center;       /* ✅ solo una vez */
+    align-items: center;       
     justify-content: center;
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.08); /* ✅ semitransparente */
+    background-color: rgba(255, 255, 255, 0.08);
     color: #aaa;
     font-size: 1.2rem;
     margin: 0 6px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
-
 .social-link:hover {
     background-color: var(--magic-purple, #8b5cf6);
     color: #ffffff;
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4); /* ✨ extra */
 }
-
-/* ── Íconos SVG/img dentro del link ── */
 .social-icon {
     width: 25px;
     height: 25px;
     object-fit: contain;
-    /* color: #aaa ← no afecta a <img>, solo a íconos de fuente */
     transition: filter 0.3s ease, transform 0.3s ease;
 }
-
-/* ── Body ocupa toda la pantalla ── */
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* ← ocupa al menos toda la pantalla */
+    min-height: 100vh;
 }
-
-/* ── El contenido principal crece para empujar el footer ── */
 main {
-    flex: 1; /* ← esto empuja el footer hacia abajo */
+    flex: 1;
 }
-
 #footer {
     color: #aaa;
     font-size: 1rem;
@@ -112,4 +84,54 @@ main {
         rgb(44, 25, 89) 100%
     );
 }
+.panel{
+    background: rgba(22, 22, 42, 0.9);
+    border: 1px solid rgba(139, 92, 246, 0.35);
+    border-radius: 12px;
+    padding: 1.2rem;
+    font-size: x-large;
+}
+.paneltitulo {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.panelpedido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+.btn-comprar {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 0.5rem;
+    background-color: #7c3aed;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.btn-comprar:hover {
+    background-color: #6d28d9;
+}
+.btn-vaciar {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: #f87171;
+    border: 1px solid #f87171;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.btn-vaciar:hover {
+    background-color: #f87171;
+    color: #fff;
+}
+
 
