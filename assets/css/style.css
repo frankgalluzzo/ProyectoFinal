@@ -14,6 +14,17 @@
     --text-light: #F5F3FF;
     --text-secondary: #6B7280;
 }
+/* Letras ------------------------- */
+@font-face {
+    font-family: airstrike;
+    src: url(/assets/letras/airstrike/airstrike.otf);
+}
+
+@font-face {
+    font-family: aldo;
+    src: url(/assets/letras/aldo/aldo.ttf);
+}
+
 /* Navbar --------------------------- */
 .navbar nav {
     height: 4rem;
@@ -470,14 +481,4 @@ hr {
     background-color: #8b5cf6;
     opacity: 1;
     margin: 0;       
-}
-/* Letras ------------------------- */
-@font-face {
-    font-family: airstrike;
-    src: url(/assets/letras/airstrike/airstrike.otf);
-}
-
-@font-face {
-    font-family: aldo;
-    src: url(/assets/letras/aldo/aldo.ttf);
 }
